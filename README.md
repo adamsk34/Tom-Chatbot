@@ -28,6 +28,9 @@ that you have a father, Tom may respond with "What is he name?" (his grammer isn
 Tom will run out of questions to ask and the conversation pretty much ends unless he thinks of more
 questions or you choose to ask him one.
 
+By default Tom writes in his world model that he likes you and that the two of you are friends. Which I
+think is very cute.
+
 Using proper punctuation helps him understand what you are ssaying but it isn't always necessary.
 
 Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom with
