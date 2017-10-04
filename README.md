@@ -35,3 +35,8 @@ Using proper punctuation helps him understand what you are saying but it isn't a
 
 Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom will
 only be able to process one of those two statements. This is a serious problem but will change soon.
+
+I included a transcript of a real conversation I had with Tom. You can see that the conversation flow
+is a bit unnatural but not awful. You can see me tell him things and then quiz him on whether or not
+he remembered. Many chatbots don't have a memory like Tom does. Many chatbots can't even remember the
+user's or their own name for that matter.
