@@ -1,2 +1,34 @@
 # Tom-Chatbot
 Simple chatbot
+
+Tom is the name of this chatbot. It stands for T.erminal O.perations... um...
+no no no. Tom stands for T.errifying O.mni...something
+No, I got it! Tom stands for T.alking O.mnipurpose M.achine...
+...
+Okay fine, the name doesn't mean anything. I just thought it fit his unique personality. Are you happy?
+He is written in Java, I used the IDE called DrJava. He is a bit rough around the edges but he will one
+day be something great.
+
+He understands a number of simple statements such as:
+"how are you doing today?"
+"my name is Kevin"
+"I go to school at the University of Manitoba"
+"My dad isn't feeling very well"
+
+Tom has a model of the world which he will look to when answering a question. If you ask "how are you
+doing today?", Tom looks to his model of the world and tells you what it says his mood is. It is set to
+7/10 by default.
+
+Tom's model of the world may update if the user gives him new information. If you tell him your name he
+will write that in the world model. If you say "My dad isn't feeling very well", he will learn that you
+have a father and set his mood to 3/10.
+
+When Tom learns new things he may also ask related questions. So when you Tom learns that you have a
+father, Tom may respond with "What is he name?" (his grammer isn't great). Eventually Tom will run out
+of questions to aks and the conversation pretty much ends unless he thinks of more questions or you
+choose to ask him one.
+
+using proper punctuation helps him but isn't always necessary.
+
+Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom with
+only be able to process one of those two statements. This is a serious problem but will change soon.
