@@ -23,12 +23,12 @@ Tom's model of the world may update if the user gives him new information. If yo
 will write that in the world model. If you say "My dad isn't feeling very well", he will learn that you
 have a father and set his mood to 3/10.
 
-When Tom learns new things he may also ask related questions. So when you Tom learns that you have a
-father, Tom may respond with "What is he name?" (his grammer isn't great). Eventually Tom will run out
-of questions to aks and the conversation pretty much ends unless he thinks of more questions or you
-choose to ask him one.
+When Tom learns new things he may also ask related questions. So when you mention your dad, Tom learns
+that you have a father, Tom may respond with "What is he name?" (his grammer isn't great). Eventually
+Tom will run out of questions to ask and the conversation pretty much ends unless he thinks of more
+questions or you choose to ask him one.
 
-using proper punctuation helps him but isn't always necessary.
+Using proper punctuation helps him understand what you are ssaying but it isn't always necessary.
 
 Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom with
 only be able to process one of those two statements. This is a serious problem but will change soon.
