@@ -31,7 +31,7 @@ questions or you choose to ask him one.
 By default Tom writes in his world model that he likes you and that the two of you are friends. Which I
 think is very cute.
 
-Using proper punctuation helps him understand what you are ssaying but it isn't always necessary.
+Using proper punctuation helps him understand what you are saying but it isn't always necessary.
 
-Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom with
+Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom will
 only be able to process one of those two statements. This is a serious problem but will change soon.
