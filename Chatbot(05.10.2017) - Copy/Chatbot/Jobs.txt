@@ -1,0 +1,128 @@
+policeman
+policewoman
+police man
+police woman
+police officer
+cop
+fireman
+firewoman
+firefighter
+fire man
+fire woman
+fire fighter
+pilot
+construction
+musician
+song writer
+agent
+garbageman
+garbagewoman
+garbage man
+garbage woman
+street cleaner
+clown
+salesperson
+salesman
+saleswoman
+sales person
+sales man
+sales woman
+cashier
+clerk
+server
+cook
+chef
+waiter
+waitress
+nurse
+janitor
+custodian
+cleaner
+rector
+director
+secretary
+assistant
+manager
+accountant
+teacher
+driver
+attendant
+representative
+mechanic
+executive
+auditor
+guard
+receptionist
+businessman
+businesswoman
+businessperson
+business man
+business woman
+business person
+maid
+landscaper
+groundskeeper
+deliveryman
+deliverywoman
+deliveryperson
+delivery man
+delivery woman
+delivery person
+mailman
+mailwoman
+mailperson
+mailcarrier
+mail man
+mail woman
+mail person
+mail carrier
+sheriff
+carpenter
+scientist
+technician
+engineer
+lawyer
+teller
+bank teller
+banker
+supervisor
+politician
+congressman
+congresswoman
+congressperson
+congress man
+congress woman
+congress person
+senator
+president
+prime minister
+minister
+manager
+operator
+electrician
+dishwasher
+coder
+programmer
+computer scientist
+scientist
+bartender
+officer
+jailer
+inspector
+stockbroker
+developer
+machinist
+hairdresser
+hairstylist
+cosmetologist
+farmer
+host
+hostess
+administrator
+agent
+welder
+soldier
+commander
+dentist
+physician
+telemarketer

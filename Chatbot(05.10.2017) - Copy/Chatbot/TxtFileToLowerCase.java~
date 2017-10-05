@@ -1,0 +1,10 @@
+
+public class TxtFileToLowerCase
+{
+  final String FILE_NAME = "NamesBoy.txt" ;
+  
+  public static void main (String[] args)
+  {
+    
+  }
+}

@@ -1,0 +1,659 @@
+[individual] name is [name]
+[individual].name = [name]
+
+[individual] is named [name]
+[individual].name = [name]
+
+[individual] is called [name]
+[individual].name = [name]
+
+[individual] go by the name [name]
+[individual].name = [name]
+
+[individual] goes by the name [name]
+[individual].name = [name]
+
+[individual] have no [var]
+[individual].[var] = null
+
+[individual] has no [var]
+[individual].[var] = null
+
+[individual] do not have a [var]
+[individual].[var] = null
+
+[individual] does not have a [var]
+[individual].[var] = null
+
+[name] is the name
+[individualsArr.get(0)].name = [name]
+
+[name] here
+[individualsArr.get(0)].name = [name]
+
+the name is [name]
+[individualsArr.get(0)].name = [name]
+
+[name] is a person
+new individual([name])
+
+there is person [name]
+new individual([name])
+
+there is guy named [name]
+new male([name])
+
+there is dude named [name]
+new male([name])
+
+there is boy named [name]
+new male([name])
+
+there is man named [name]
+new male([name])
+
+there is girl named [name]
+new female([name])
+
+there is woman named [name]
+new female([name])
+
+there is lady named [name]
+new female([name])
+
+[name] is the name of [individual]
+[name].individual = [individual]
+
+call [individual] [name]
+[individual].name = [name]
+
+they call [individual] [name]
+[individual].name = [name]
+
+people call [individual] [name]
+[individual].name = [name]
+
+you can call [individual] [name]
+[individual].name = [name]
+
+[name] is [individual] name
+[name].individual = [individual]
+
+[name] is [individual]
+[name].individual = [individual]
+
+[individual1] is [individual2]
+[individual1].individual = [individual2]
+
+[individual] is [name]
+[individual].name = [name]
+
+[individual] was born in [place]
+[individual].placeOfBirth = [place]
+
+[individual] home country is [place]
+[individual].placeOfBirth = [place]
+
+[place] is [individual] home country
+[individual].placeOfBirth = [place]
+
+[individual1] like [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] likes [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] do not like [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] does not like [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] dislike [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] dislikes [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] do not dislike [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] does not dislike [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] love [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] loves [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] is in love with [individual2]
+[individual1].likesIndividuals = [individual2]
+
+[individual1] is not in love with [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] do not love [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual1] does not love [individual2]
+[individual1].likesIndividuals != [individual2]
+
+[individual] like [activity]
+[individual].likesActivities = [activity]
+
+[individual] likes [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not like [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not like [activity]
+[individual].likesActivities != [activity]
+
+[individual] dislike [activity]
+[individual].likesActivities != [activity]
+
+[individual] dislikes [activity]
+[individual].likesActivities != [activity]
+
+[individual] do not dislike [activity]
+[individual].likesActivities = [activity]
+
+[individual] does not dislike [activity]
+[individual].likesActivities = [activity]
+
+[individual] love [activity]
+[individual].likesActivities = [activity]
+
+[individual] loves [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not love [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not love [activity]
+[individual].likesActivities != [activity]
+
+[individual] like to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] likes to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not like to do [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not like to do [activity]
+[individual].likesActivities != [activity]
+
+[individual] do not dislike to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] does not dislike to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] love to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] loves to do [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not love to do [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not love to do [activity]
+[individual].likesActivities != [activity]
+
+[individual] like doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] likes doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not like doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not like doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] dislike doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] dislikes doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] do not dislike doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] does not dislike doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] love doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] loves doing [activity]
+[individual].likesActivities = [activity]
+
+[individual] do not love doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] does not love doing [activity]
+[individual].likesActivities != [activity]
+
+[individual] is a [job]
+[individual].job = [job]
+
+[individual] job is [job]
+[individual].job = [job]
+
+[individual] is the [job]
+[individual].job = [job]
+
+[individual] is unemployed
+[individual].job = null
+
+[individual] work at [employer]
+[individual].employer = [employer]
+
+[individual] work for [employer]
+[individual].employer = [employer]
+
+[individual] work at a [employer]
+[individual].employer = [employer]
+
+[individual] work for a [employer]
+[individual].employer = [employer]
+
+[individual] works at [employer]
+[individual].employer = [employer]
+
+[individual] works for [employer]
+[individual].employer = [employer]
+
+[individual] works at a [employer]
+[individual].employer = [employer]
+
+[individual] works for a [employer]
+[individual].employer = [employer]
+
+[individual] do not work for anyone
+[individual].employer = null
+
+[individual] do not have an employer
+[individual].employer = null
+
+[individual] have no employer
+[individual].employer = null
+
+[individual] does not work for anyone
+[individual].employer = null
+
+[individual] does not have an employer
+[individual].employer = null
+
+[individual] has no employer
+[individual].employer = null
+
+[individual] is not a student
+[individual].school = null
+
+[individual] do not go to school
+[individual].school = null
+
+[individual] go to [school]
+[individual].school = [school]
+
+[individual] go to the [school]
+[individual].school = [school]
+
+[individual] goes to [school]
+[individual].school = [school]
+
+[individual] goes to the [school]
+[individual].school = [school]
+
+[individual] is a student at [school]
+[individual].school = [school]
+
+[individual] is [number]
+[individual].age = [number]
+
+[individual] is [number] years old
+[individual].age = [number]
+
+[individual1] is the same age as [individual2]
+[individual1].age = [individual2].age
+
+[individual1] are the same age as [individual2]
+[individual1].age = [individual2].age
+
+[individual1] and [individual2] is the same age
+[individual1].age = [individual2].age
+
+[individual1] age is the same as [individual2]
+[individual1].age = [individual2].age
+
+[individual] is a man
+[individual].isMale = true
+
+[individual] is a boy
+[individual].isMale = true
+
+[individual] is a guy
+[individual].isMale = true
+
+[individual] is a dude
+[individual].isMale = true
+
+[individual] is male
+[individual].isMale = true
+
+[individual] is not a man
+[individual].isMale = false
+
+[individual] is not a boy
+[individual].isMale = false
+
+[individual] is not a guy
+[individual].isMale = false
+
+[individual] is not a dude
+[individual].isMale = false
+
+[individual] is not male
+[individual].isMale = false
+
+[individual] is a woman
+[individual].isMale = false
+
+[individual] is a girl
+[individual].isMale = false
+
+[individual] is a lady
+[individual].isMale = false
+
+[individual] is female
+[individual].isMale = false
+
+[individual] is not a woman
+[individual].isMale = true
+
+[individual] is not a girl
+[individual].isMale = true
+
+[individual] is not a lady
+[individual].isMale = true
+
+[individual] is not female
+[individual].isMale = true
+
+[individual] is in [place]
+[individual].location = [place]
+
+[individual] lives in [place]
+[individual].nationality = [place]
+
+[individual] live in [place]
+[individual].nationality = [place]
+
+[place] is [individual] home
+[individual].nationality = [place]
+
+[individual] country is [place]
+[individual].nationality = [place]
+
+[individual] come from [place]
+[individual].nationality = [place]
+
+[individual] comes from [place]
+[individual].nationality = [place]
+
+[individual] is from [place]
+[individual].nationality = [place]
+
+[individual] feel [mood]
+[individual].isMood = [mood].num
+
+[individual] feels [mood]
+[individual].isMood = [mood].num
+
+[individual] feel not [mood]
+[individual].isMood = [mood].num
+
+[individual] feels not [mood]
+[individual].isMood = [mood].num
+
+[individual] do not feel [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] does not feel [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is feeling [mood]
+[individual].isMood = [mood].num
+
+[individual] is feeling not [mood]
+[individual].isMood = [mood].num
+
+[individual] is not feeling [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is not feeling too [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is doing [mood]
+[individual].isMood = [mood].num
+
+[individual] is doing not [mood]
+[individual].isMood = [mood].num
+
+[individual] is not doing [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is not doing too [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is not too [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is [mood]
+[individual].isMood = [mood].num
+
+[individual] is not [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a [mood] day
+[individual].isMood = [mood].num
+
+[individual] is not having a [mood] day
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a not [mood] day
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a [mood] time
+[individual].isMood = [mood].num
+
+[individual] is not having a [mood] time
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a not [mood] time
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a [mood]
+[individual].isMood = [mood].num
+
+[individual] is not having a [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is having a not [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] day is going [mood]
+[individual].isMood = [mood].num
+
+[individual] is going [mood]
+[individual].isMood = [mood].num
+
+[individual] day is not going [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is not going [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] day is going not [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] is going not [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] day has been [mood]
+[individual].isMood = [mood].num
+
+[individual] day has not been [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] day has been not [mood]
+[individual].isMood = 10 -[mood].num
+
+[individual] had a [mood] day
+[individual].isMood = [mood].num
+
+[individual] had a not [mood] day
+[individual].isMood = 10 -[mood].num
+
+[individual] has not had a [mood] day
+[individual].isMood = 10 -[mood].num
+
+[individual] has had a not [mood] day
+[individual].isMood = 10 -[mood].num
+
+[individual2] is [rel] to [individual1]
+rel([individual1], [individual2])
+
+the [rel] to [individual1] is [individual2]
+rel([individual1], [individual2])
+
+the [rel] to [individual1] is named [individual2]
+rel([individual1], [individual2])
+
+the [rel] to [individual1] is called [individual2]
+rel([individual1], [individual2])
+
+[individual2] is [rel] of [individual1]
+rel([individual1], [individual2])
+
+the [rel] of [individual1] is [individual2]
+rel([individual1], [individual2])
+
+the [rel] of [individual1] is named [individual2]
+rel([individual1], [individual2])
+
+the [rel] of [individual1] is called [individual2]
+rel([individual1], [individual2])
+
+[individual2] is [rel] with [individual1]
+rel([individual1], [individual2])
+
+[individual1] have a [rel] named [individual2]
+rel([individual1], [individual2])
+
+[individual1] have a [rel] called [individual2]
+rel([individual1], [individual2])
+
+[individual1] has a [rel] named [individual2]
+rel([individual1], [individual2])
+
+[individual1] has a [rel] called [individual2]
+rel([individual1], [individual2])
+
+[individual1] and [individual2] is [rel]
+rel([individual1], [individual2])
+
+[individual1] and [individual2] work together
+coworker([individual1], [individual2])
+
+[individual1] work with [individual2]
+coworker([individual1], [individual2])
+
+[individual1] works with [individual2]
+coworker([individual1], [individual2])
+
+[individual1] is working with [individual2]
+coworker([individual1], [individual2])
+
+[individual] is famous
+[individual].isFamous = true
+
+[individual] is well known
+[individual].isFamous = true
+
+[individual] is not famous
+[individual].isFamous = false
+
+[individual] is not well known
+[individual].isFamous = false
+
+[individual] have fame
+[individual].isFamous = true
+
+[individual] have no fame
+[individual].isFamous = false
+
+[individual] is alive
+[individual].isAlive = true
+
+[individual] is not alive
+[individual].isAlive = false
+
+[individual] is living
+[individual].isAlive = true
+
+[individual] is not living
+[individual].isAlive = false
+
+[individual] is dead
+[individual].isAlive = false
+
+[individual] is not dead
+[individual].isAlive = true
+
+[individual] is a person
+[individual].isPerson = true
+
+[individual] is not a person
+[individual].isPerson = false
+
+[individual] is a human
+[individual].isPerson = true
+
+[individual] is not a human
+[individual].isPerson = false
+
+[individual] is a human
+[individual].isPerson = true
+
+[individual] is not a human
+[individual].isPerson = false
+
+[individual] is human
+[individual].isPerson = true
+
+[individual] is not human
+[individual].isPerson = false
+
+[individual] is [activity]
+[individual].isDoing = [activity]
+
+[individual] [activity]
+[individual].isDoing = [activity]
+
+[individual] is not [activity]
+[individual].isDoing != [activity]
+
+[individual] do not [activity]
+[individual].isDoing != [activity]
+
+[individual] does not [activity]
+[individual].isDoing != [activity]
