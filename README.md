@@ -1,6 +1,8 @@
 # Tom-Chatbot
 Simple chatbot
 
+This is a personal project.
+
 Tom is the name of this chatbot, he is still in development. Tom stands for T.erminal O.perations um...
 no no no. Tom stands for T.errifying O.mni...something.
 No, I got it! Tom stands for T.alking O.mnipurpose M.achine...
