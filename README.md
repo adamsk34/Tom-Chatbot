@@ -1,7 +1,7 @@
 # Tom-Chatbot
 Simple chatbot
 
-Tom is the name of this chatbot, he is still in development. Tom stands for T.erminal O.perations... um...
+Tom is the name of this chatbot, he is still in development. Tom stands for T.erminal O.perations um...
 no no no. Tom stands for T.errifying O.mni...something.
 No, I got it! Tom stands for T.alking O.mnipurpose M.achine...
 ...
@@ -23,10 +23,10 @@ Tom's model of the world may update if the user gives him new information. If yo
 will write that in the world model. If you say "My dad isn't feeling very well", he will learn that you
 have a father and set his mood to 3/10.
 
-When Tom learns new things he may also ask related questions. So when you mention your dad, Tom learns
-that you have a father, Tom may respond with "What is he name?" (his grammer isn't great). Eventually
-Tom will run out of questions to ask and the conversation pretty much ends unless he thinks of more
-questions or you choose to ask him one.
+When Tom learns new things he may also ask related questions. So when Tom learns that you have a
+father, Tom will respond with "What is he name?" (his grammer isn't great). Eventually Tom will run out
+of questions to ask and the conversation pretty much ends unless he thinks of more questions or you
+choose to ask him one.
 
 By default Tom writes in his world model that he likes you and that the two of you are friends. Which I
 think is very cute.
