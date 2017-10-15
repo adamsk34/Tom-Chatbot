@@ -1,7 +1,7 @@
 # Tom-Chatbot
 Simple chatbot
 
-This is a personal project.
+This is a personal project. Run "AI_Tom.java" to have a chat.
 
 Tom is the name of this chatbot, he is still in development. Tom stands for T.erminal O.perations um...
 no no no. Tom stands for T.errifying O.mni...something.
