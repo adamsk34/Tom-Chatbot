@@ -38,6 +38,10 @@ Using proper punctuation helps him understand what you are saying but it isn't a
 Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom will
 only be able to process one of those two statements. This is a serious problem but will change soon.
 
+One of the next things I will change about Tom is I will give him a proper sense of conversation flow.
+What I will do is make some FSM that gives him a guide as to what kind of response is appropriate,
+given any particular input from the user.
+
 I included a transcript of a real conversation I had with Tom. You can see that the conversation flow
 is a bit unnatural but not awful. You can see me tell him things and then quiz him on whether or not
 he remembered. Many chatbots don't have a memory like Tom does. Many chatbots can't even remember the
