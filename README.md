@@ -1,48 +1,20 @@
 # Tom-Chatbot
-Simple chatbot
 
-This is a personal project. Run "AI_Tom.java" to have a chat.
+This is a personal project, a rule-based chatbot. Primarily made in 2017, I refactored somewhat in 2018. The only purpose Tom is designed to fulfill is to be capable of a simple chat.
 
-Tom is the name of this chatbot, he is still in development. Tom stands for T.erminal O.perations um...
-no no no. Tom stands for T.errifying O.mni...something.
-No, I got it! Tom stands for T.alking O.mnipurpose M.achine...
-...
-Okay fine, the name doesn't mean anything. I just thought it fit his unique personality. Are you happy?
-He is written in Java, I used the IDE called DrJava. He is a bit rough around the edges but he will one
-day be something great.
+### Getting Started
 
-He understands a number of simple statements such as:
-"how are you doing today?"
-"my name is Kevin"
-"I go to school at the University of Manitoba"
-"My dad isn't feeling very well"
+This project is completely self-contained and has no dependencies.
+Simply run `AI_Tom.java` to have a chat.
 
-Tom has a model of the world which he will look to when answering a question. If you ask "how are you
-doing today?", Tom looks to his model of the world and tells you what it says his mood is. It is set to
-7/10 by default.
+### Primary Features
 
-Tom's model of the world may update if the user gives him new information. If you tell him your name he
-will write that in the world model. If you say "My dad isn't feeling very well", he will learn that you
-have a father and set his mood to 3/10.
+World Model: Tom has a "complex" world model, when given new information he changes what he knows. The model contains a list of all the people Tom knows, to start it is just you and him, and the list grows as you tell him about more people. The model also contains a list of jobs, places, activities and more. One shortcoming of many chatbots is that they have no sense of the state of the outside world. Tom can listen and understand a variety of inputs.
 
-When Tom learns new things he may also ask related questions. So when Tom learns that you have a
-father, Tom will respond with "What is he name?" (his grammer isn't great). Eventually Tom will run out
-of questions to ask and the conversation pretty much ends unless he thinks of more questions or you
-choose to ask him one.
+NLP: Tom's NLP works by matching user input to sample phrases. These sample phrases exist under the `res\phrases\` path. Each sample phrase, in these files, is followed by its associated meaning. This method allows Tom to interpret a variety of natural language inputs.
 
-By default Tom writes in his world model that he likes you and that the two of you are friends. Which I
-think is very cute.
+Sentence Generation: Tom generates sentences the opposite way that he interprets them. When Tom generates sentences, we starts with an intended meaning he wants to get across and picks a sentence that matches the intended meaning.
 
-Using proper punctuation helps him understand what you are saying but it isn't always necessary.
+### Author
 
-Tom can only process one thing being said at a time. If you say "I am fine, how are you?", Tom will
-only be able to process one of those two statements. This is a serious problem but will change soon.
-
-One of the next things I will change about Tom is I will give him a proper sense of conversation flow.
-What I will do is make some FSM that gives him a guide as to what kind of response is appropriate,
-given any particular input from the user.
-
-I included a transcript of a real conversation I had with Tom. You can see that the conversation flow
-is a bit unnatural but not awful. You can see me tell him things and then quiz him on whether or not
-he remembered. Many chatbots don't have a memory like Tom does. Many chatbots can't even remember the
-user's or their own name for that matter.
+Kevin Adams

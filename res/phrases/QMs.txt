@@ -1,0 +1,263 @@
+who is [individual]
+describe([individual])
+
+who do you think [individual] is
+describe([individual])
+
+do you know [individual] [var]
+[individual].[var]
+
+do you know what [individual] [var] is
+[individual].[var]
+
+do you know what [var] [individual] have
+[individual].[var]
+
+do you know what [var] [individual] has
+[individual].[var]
+
+do [individual] have a [var]
+[individual].[var]
+
+does [individual] have a [var]
+[individual].[var]
+
+is [individual] unemployed
+[individual].job
+
+is [individual] employed
+[individual].job
+
+who do [individual] work for
+[individual].employer
+
+who does [individual] work for
+[individual].employer
+
+what do [individual] work for
+[individual].employer
+
+what does [individual] work for
+[individual].employer
+
+do [individual] work for anyone
+[individual].employer
+
+does [individual] work for anyone
+[individual].employer
+
+do [individual] have an employer
+[individual].employer
+
+does [individual] have an employer
+[individual].employer
+
+is [individual] a student
+[individual].school
+
+do [individual] go to school
+[individual].school
+
+does [individual] go to school
+[individual].school
+
+what school do [individual] go to
+[individual].school
+
+what school does [individual] go to
+[individual].school
+
+what is [individual] age
+[individual].age
+
+what is [individual] name
+[individual].name
+
+what is [individual] called
+[individual].name
+
+what is the name of [individual]
+[individual].name
+
+what should i call [individual]
+[individual].name
+
+what do i call [individual]
+[individual].name
+
+what do people call [individual]
+[individual].name
+
+what do they call [individual]
+[individual].name
+
+where was [individual] born
+[individual].placeOfBirth
+
+where were [individual] born
+[individual].placeOfBirth
+
+what is the birthplace of [individual]
+[individual].placeOfBirth
+
+what was the birthplace of [individual]
+[individual].placeOfBirth
+
+where is the birthplace of [individual]
+[individual].placeOfBirth
+
+where was the birthplace of [individual]
+[individual].placeOfBirth
+
+where is [individual] from
+[individual].nationality
+
+where do [individual] come from
+[individual].nationality
+
+where does [individual] come from
+[individual].nationality
+
+what is [individual] nationality
+[individual].nationality
+
+what country do [individual] live in
+[individual].nationality
+
+what country does [individual] live in
+[individual].nationality
+
+where do [individual] live
+[individual].nationality
+
+where does [individual] live
+[individual].nationality
+
+where is [individual]
+[individual].location
+
+what is [individual] job
+[individual].job
+
+what job do [individual] have
+[individual].job
+
+what job does [individual] have
+[individual].job
+
+what does [individual] do for work
+[individual].job
+
+what work does [individual] do
+[individual].job
+
+what do [individual] do for work
+[individual].job
+
+what is it [individual] do for work
+[individual].job
+
+what is it [individual] does for work
+[individual].job
+
+what work do [individual] do
+[individual].job
+
+how old is [individual]
+[individual].age
+
+is [individual] a man or a woman
+maleOrFemale([individual])
+
+is [individual] a male or a female
+maleOrFemale([individual])
+
+is [individual] a man or woman
+maleOrFemale([individual])
+
+is [individual] a male or female
+maleOrFemale([individual])
+
+is [individual] man or a woman
+maleOrFemale([individual])
+
+is [individual] male or a female
+maleOrFemale([individual])
+
+is [individual] man or woman
+maleOrFemale([individual])
+
+is [individual] male or female
+maleOrFemale([individual])
+
+what is [individual] gender
+maleOrFemale([individual])
+
+is [individual2] [individual1] [rel]
+rel([individual1], [individual2])
+
+how is [individual] feeling
+[individual].mood
+
+how is [individual] doing
+[individual].mood
+
+how is [individual]
+[individual].mood
+
+how do [individual] feel
+[individual].mood
+
+how does [individual] feel
+[individual].mood
+
+how is [individual] day
+[individual].mood
+
+how is it going
+[individualsArr.get(1)].mood
+
+how is it hanging
+[individualsArr.get(1)].mood
+
+how is life
+[individualsArr.get(1)].mood
+
+how is things
+[individualsArr.get(1)].mood
+
+who do [individual] like
+[individual].likesIndividual
+
+who does [individual] likes
+[individual].likesIndividual
+
+what is [individual] doing
+[individual].isDoing
+
+what is [individual] up to
+[individual].isDoing
+
+what is up
+[individualsArr.get(1)].isDoing
+
+what is [individual]
+[individual].job
+
+what do [individual] like to do
+[individual].likesActivity
+
+what does [individual] like to do
+[individual].likesActivity
+
+what does [individual] like doing
+[individual].likesActivity
+
+what do [individual] like doing
+[individual].likesActivity
+
+what do [individual] do for fun
+[individual].likesActivity
+
+what does [individual] do for fun
+[individual].likesActivity
