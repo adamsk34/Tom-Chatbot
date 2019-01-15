@@ -103,6 +103,8 @@ electrician
 dishwasher
 coder
 programmer
+software developer
+software engineer
 computer scientist
 scientist
 bartender

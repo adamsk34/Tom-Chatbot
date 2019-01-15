@@ -4,18 +4,17 @@ package mind;
 import java.util.* ;
 import java.io.* ;
 import world_model.*;
+import world_model.domain_objects.*;
 
-public class ChatBot
+public class Chatbot
 {
   private static NLP myNLP ;
-  private static World myWorld ;
+  private static WorldManager myWorld ;
   
-  private static ArrayList<Interchange> arrQA ; // question answer
   private static ArrayList<Interchange> arrQYN ;// question yes/no
   private static ArrayList<Interchange> arrQM ; // question meaning
   private static ArrayList<Interchange> arrSM ; // statement meaning
   private static ArrayList<Interchange> arrMyQ ; // my questions
-  private static String fileNameQA = "\\..\\res\\phrases\\QAs.txt" ;
   private static String fileNameQM = "\\..\\res\\phrases\\QMs.txt" ;
   private static String fileNameSM = "\\..\\res\\phrases\\SMs.txt" ;
   private static String fileNameMyQ = "\\..\\res\\phrases\\myQs.txt" ;
@@ -55,12 +54,12 @@ public class ChatBot
   public static final int MATCH_MINIMUM_STATEMENT = 80 ;// originally 80, 70
   private static final int NAME_TO_GENDER_CONFIDENCE = 85 ;// originally 85
   
-  public ChatBot () throws IOException
+  public Chatbot () throws IOException
   {
     System.out.println("Hello, I'm Tom! Enter a query below: (\"quit\" or \'q\' to quit ; \"world\" or \'w\' to see my world model)");
     
     myNLP = new NLP() ;
-    myWorld = new World() ;
+    myWorld = new WorldManager() ;
     
     myNLP.setTom(this) ;
     myNLP.setMyWorld(myWorld) ;
@@ -76,12 +75,11 @@ public class ChatBot
     // create user and Tom as Individuals
     createUser() ;
     createTom() ;
-  }// ChatBot constructor
+  }// Chatbot constructor
   
   public void printStats ()
   {
     System.out.println("Printing stats...\n" +
-                       "# of QAs: " + arrQA.size() + "\n" +
                        "# of QYNs: " + arrQYN.size() + "\n" +
                        "# of QMs: " + arrQM.size() + "\n" +
                        "# of SMs: " + arrSM.size() + "\n" +
@@ -182,7 +180,7 @@ public class ChatBot
           arrSM.remove( origSizeArrSM ) ;
         }
         if(arrSM.size() != origSizeArrSM)
-          System.out.println("ERROR: ChatBot.sendToTom(), arrSM.size() = " + arrSM.size() + "   origSizeArrSM = " + origSizeArrSM) ;
+          System.out.println("ERROR: Chatbot.sendToTom(), arrSM.size() = " + arrSM.size() + "   origSizeArrSM = " + origSizeArrSM) ;
         
         // ask user a questtion
         if(myQuestions.size() > 0 && response.length() <= 15)// magic number. ask question if response is short.
@@ -233,7 +231,7 @@ public class ChatBot
         myWorld.getIndividualsArr().get(i).print() ;
       }
       else
-        System.out.println("ERROR: ChatBot.printAllIndividuals(), individualsArr.get(i) == null") ;
+        System.out.println("ERROR: Chatbot.printAllIndividuals(), individualsArr.get(i) == null") ;
     }
   }// printAllIndividuals
   
@@ -273,7 +271,7 @@ public class ChatBot
     // change details
     tom.setLocation( new MyString("your computer", 100) ) ;
     tom.setNationality( new MyString("your computer", 100) ) ;
-    tom.setJob( new MyString("ChatBot", 100) ) ;
+    tom.setJob( new MyString("Chatbot", 100) ) ;
     tom.setSchool( new MyString(null, 100) ) ;
     tom.setIsMale( new MyBoolean(true, 100) ) ;
     tom.setMyMood( new MyInt(7, 100) ) ;
@@ -298,12 +296,6 @@ public class ChatBot
   
   public void readAllFiles () throws IOException
   {
-    try {
-      readQAsFile() ;
-    }
-    catch(Exception IOException) {
-      System.out.println("Failed to read QAs file.") ;
-    }
     try {
       readQMsFile() ;
     }
@@ -505,13 +497,13 @@ public class ChatBot
           }
         }
         else
-          System.out.println("ERROR: ChatBot.askUserQuestion(), meaning == null") ;
+          System.out.println("ERROR: Chatbot.askUserQuestion(), meaning == null") ;
       }
       else
-        System.out.println("ERROR: ChatBot.askUserQuestion(), phrase == null") ;
+        System.out.println("ERROR: Chatbot.askUserQuestion(), phrase == null") ;
     }
     else
-      System.out.println("ERROR: ChatBot.askUserQuestion(), qChoice == 0") ;
+      System.out.println("ERROR: Chatbot.askUserQuestion(), qChoice == 0") ;
     
     return result ;
   }// askUserQuestion
@@ -646,10 +638,10 @@ public class ChatBot
         }
       }
       else
-        System.out.println("ERROR: ChatBot.makeQuestion(), result == null") ;
+        System.out.println("ERROR: Chatbot.makeQuestion(), result == null") ;
     }
     else
-      System.out.println("ERROR: ChatBot.makeQuestion(), phrase == null") ;
+      System.out.println("ERROR: Chatbot.makeQuestion(), phrase == null") ;
     return result ;
   }// makeQuestion
   
@@ -709,7 +701,7 @@ public class ChatBot
               meaning += "]" + tempString.substring(meaning.indexOf("[individualsArr.get(") +24, tempString.length()) ;
             }
             else
-              System.out.println("ERROR: ChatBot.checkForDefinedInd(), meaning.charAt(20) == " + meaning.charAt(20)) ;
+              System.out.println("ERROR: Chatbot.checkForDefinedInd(), meaning.charAt(20) == " + meaning.charAt(20)) ;
           }
           else
           {
@@ -723,17 +715,17 @@ public class ChatBot
                 tempString.substring(meaning.indexOf("[individualsArr.get(") +24, tempString.length()) ;
             }
             else
-              System.out.println("ERROR: ChatBot.checkForDefinedInd(), meaning.charAt(20) == " + meaning.charAt(20)) ;
+              System.out.println("ERROR: Chatbot.checkForDefinedInd(), meaning.charAt(20) == " + meaning.charAt(20)) ;
           }
         }
         
         phrase.setMyMeaning(meaning) ;
       }
       else
-        System.out.println("ERROR: ChatBot.checkForDefinedInd(), meaning == null") ;
+        System.out.println("ERROR: Chatbot.checkForDefinedInd(), meaning == null") ;
     }
     else
-      System.out.println("ERROR: ChatBot.checkForDefinedInd(), phrase == null") ;
+      System.out.println("ERROR: Chatbot.checkForDefinedInd(), phrase == null") ;
   }// checkForDefinedInd
   
   public static int findNumber (String str)
@@ -821,7 +813,7 @@ public class ChatBot
       }// for
     }
     else
-      System.out.println("ERROR: ChatBot.hasMoodReturnFull(), key == " + key) ;
+      System.out.println("ERROR: Chatbot.hasMoodReturnFull(), key == " + key) ;
     
     return result ;
   }// hasMoodReturnFull
@@ -898,33 +890,6 @@ public class ChatBot
     
     return result ;
   }// isWorldLine
-  
-  public static String findAnswer (String line)
-  {
-    String response = null ;
-    int matchMinimum = MATCH_MINIMUM_QUESTION ;
-    int match = 0 ;
-    
-    if(!isQuitLine(line))
-    {
-      for(int i = 0 ; i < arrQA.size() && match < 100 ; i++)
-      {
-        match = NLP.isCompatable(line, arrQA.get(i).getInput().toLowerCase()) ;
-        
-        if(match >= matchMinimum)
-        {
-          response = arrQA.get(i).getOutput() ;
-          matchMinimum = match+1 ;
-        }
-      }
-    }
-    else// quitting
-    {
-      response = "Goodbye." ;
-    }
-    
-    return response ;
-  }// findResponse
   
   public static String fromToEnd (ArrayList<String> lineTokens, int pos)
   {
@@ -1229,7 +1194,7 @@ public class ChatBot
         }
         else
         {
-          System.out.println("ERROR: ChatBot.tokenize(), unknown apostrophe. |" + str + "|") ;
+          System.out.println("ERROR: Chatbot.tokenize(), unknown apostrophe. |" + str + "|") ;
         }
       }
       else if(half1.equals("gonna"))
@@ -1281,7 +1246,7 @@ public class ChatBot
       }
     }
     else
-      System.out.println("ERROR: ChatBot.doubleArrayListStringString(), invalid tokensArr") ;
+      System.out.println("ERROR: Chatbot.doubleArrayListStringString(), invalid tokensArr") ;
   }// doubleArrayListStringString
   
   public static ArrayList<String> deepCopyArrayListString (ArrayList<String> tokens)
@@ -1365,7 +1330,7 @@ public class ChatBot
       }// for
     }
     else
-      System.out.println("ERROR: ChatBot.fillArrQYN(), arrSM == null") ;
+      System.out.println("ERROR: Chatbot.fillArrQYN(), arrSM == null") ;
   }// fillArrQYN
   
   public static void addInterchangeArrQYN (String input, int pos)
@@ -1395,52 +1360,10 @@ public class ChatBot
       }// for
     }
     else
-      System.out.println("ERROR: ChatBot.moveIsAndWasToFront(), invalid str") ;
+      System.out.println("ERROR: Chatbot.moveIsAndWasToFront(), invalid str") ;
     
     return result ;
   }// moveIsAndWasToFront
-  
-  public static void readQAsFile () throws IOException
-  {
-    BufferedReader in = null ;
-    boolean isQuestion = true ;
-    Interchange curr = null ;
-    String basePath = new File("").getAbsolutePath() ;
-    
-    arrQA = new ArrayList<Interchange>() ;
-    
-    try
-    {
-      in = new BufferedReader(new FileReader( basePath.concat(fileNameQA) )) ;
-      
-      String line ;
-      while((line = in.readLine()) != null)
-      {
-        if(line.length() != 0)
-        {
-          if(isQuestion)
-          {
-            curr = new Interchange(line) ;
-            arrQA.add(curr) ;
-            
-            isQuestion = false ;
-          }
-          else
-          {
-            curr.setOutput(line) ;
-            isQuestion = true ;
-          }
-        }
-      }
-    }
-    finally
-    {
-      if(in != null)
-      {
-        in.close() ;
-      }
-    }
-  }// readQAsFile
   
   public static void readQMsFile () throws IOException
   {
@@ -1520,7 +1443,7 @@ public class ChatBot
       if(arrSM != null)
         origSizeArrSM = arrSM.size() ;
       else
-        System.out.println("ERROR: ChatBot.readSMsFile(), arrSM == null") ;
+        System.out.println("ERROR: Chatbot.readSMsFile(), arrSM == null") ;
     }
     finally
     {
@@ -1607,7 +1530,7 @@ public class ChatBot
             activityArr.add(curr) ;
           }
           else
-            System.out.println("ERROR: ChatBot.readFileActivities(), tokens.length == " + tokens[0]) ;
+            System.out.println("ERROR: Chatbot.readFileActivities(), tokens.length == " + tokens[0]) ;
         }
       }// while
     }
@@ -1674,7 +1597,7 @@ public class ChatBot
       if(myWorld.getIndividualsArr().get(i) != null)
         System.out.println(myWorld.getIndividualsArr().get(i).getNameArr()) ;
       else
-        System.out.println("ERROR: ChatBot.printAllIndividuals(), individualsArr.get(" + i + ") == null") ;
+        System.out.println("ERROR: Chatbot.printAllIndividuals(), individualsArr.get(" + i + ") == null") ;
     }
   }// printAllIndividuals
   
@@ -1777,4 +1700,4 @@ public class ChatBot
     return arrSM ;
   }
   
-}// class ChatBot
+}// class Chatbot

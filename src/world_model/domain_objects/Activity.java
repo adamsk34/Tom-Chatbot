@@ -1,4 +1,4 @@
-package world_model;
+package world_model.domain_objects;
 
 import java.util.* ;
 

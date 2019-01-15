@@ -4,6 +4,7 @@
 7 happiness
 7 good
 7 well
+7 nice
 6 fine
 6 alright
 8 great

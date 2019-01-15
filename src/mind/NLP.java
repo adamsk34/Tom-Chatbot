@@ -2,11 +2,12 @@ package mind;
 
 import java.util.* ;
 import world_model.*;
+import world_model.domain_objects.*;
 
 public class NLP
 {
-  private static ChatBot tom ;
-  private static World myWorld ;
+  private static Chatbot tom ;
+  private static WorldManager myWorld ;
   
   private static int lastNonMaleInd = -1 ;
   private static int lastNonFemaleInd = -1 ;
@@ -33,12 +34,12 @@ public class NLP
     femalePronounArr.add("hers") ;
   }
   
-  public void setTom (ChatBot tomGiven)
+  public void setTom (Chatbot tomGiven)
   {
     tom = tomGiven ;
   }
   
-  public void setMyWorld (World givenWorld)
+  public void setMyWorld (WorldManager givenWorld)
   {
     myWorld = givenWorld ;
   }

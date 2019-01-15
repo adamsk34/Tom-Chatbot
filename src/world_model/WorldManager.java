@@ -2,21 +2,22 @@ package world_model;
 
 import java.util.* ;
 import mind.*;
+import world_model.domain_objects.*;
 
-public class World
+public class WorldManager
 {
-  private static ChatBot tom ;
+  private static Chatbot tom ;
   private static NLP myNLP ;
   private int origNumInds = 2 ;
   
   private static ArrayList<Individual> individualsArr ;
   
-  public World ()
+  public WorldManager ()
   {
     individualsArr = new ArrayList<Individual>() ;
   }
   
-  public void setTom (ChatBot tomGiven)
+  public void setTom (Chatbot tomGiven)
   {
     tom = tomGiven ;
   }
@@ -141,7 +142,7 @@ public class World
       // check rel
       if(rel.equals("friend"))
       {
-        //////////////// BAD! Assumes you mean last one in list
+        // assumes you mean last one in list
         if(individual.getFriendArr() != null && individual.getFriendArr().size() > 0)
         {
           result = individual.getFriendArr().get(  individual.getFriendArr().size() -1  ).getReference() ;
@@ -149,7 +150,7 @@ public class World
       }
       else if(rel.equals("coworker"))
       {
-        //////////////// BAD! Assumes you mean last one in list
+        // assumes you mean last one in list
         if(individual.getCoworkerArr() != null && individual.getCoworkerArr().size() > 0)
         {
           result = individual.getCoworkerArr().get(  individual.getCoworkerArr().size() -1  ).getReference() ;
@@ -157,7 +158,7 @@ public class World
       }
       else if(rel.equals("date"))
       {
-        //////////////// BAD! Assumes you mean last one in list
+        // assumes you mean last one in list
         if(individual.getDateArr() != null && individual.getDateArr().size() > 0)
         {
           result = individual.getDateArr().get(  individual.getDateArr().size() -1  ).getReference() ;
@@ -165,7 +166,7 @@ public class World
       }
       else if(rel.equals("boyfriend"))
       {
-        //////////////// BAD! Assumes you mean the 1st male date
+        // assumes you mean the 1st male date
         if(individual.getDateArr() != null)
         {
           for(int i = 0 ; i < individual.getDateArr().size() ; i++)
@@ -179,7 +180,7 @@ public class World
       }
       else if(rel.equals("girlfriend"))
       {
-        //////////////// BAD! Assumes you mean the 1st female date
+        // assumes you mean the 1st female date
         if(individual.getDateArr() != null)
         {
           for(int i = 0 ; i < individual.getDateArr().size() ; i++)
@@ -247,7 +248,7 @@ public class World
       }
       else if(rel.equals("son"))
       {
-        //////////////// BAD! Assumes you mean the 1st male child
+        // assumes you mean the 1st male child
         if(individual.getChildArr() != null)
         {
           for(int i = 0 ; i < individual.getChildArr().size() ; i++)
@@ -261,7 +262,7 @@ public class World
       }
       else if(rel.equals("daughter"))
       {
-        //////////////// BAD! Assumes you mean the 1st female child
+        // assumes you mean the 1st female child
         if(individual.getChildArr() != null)
         {
           for(int i = 0 ; i < individual.getChildArr().size() ; i++)
@@ -275,7 +276,7 @@ public class World
       }
       else if(rel.equals("child"))
       {
-        //////////////// BAD! Assumes you mean last one in list
+        // assumes you mean last one in list
         if(individual.getChildArr() != null && individual.getChildArr().size() > 0)
         {
           result = individual.getChildArr().get(  individual.getChildArr().size() -1  ).getReference() ;
@@ -283,7 +284,7 @@ public class World
       }
       else if(rel.equals("brother"))
       {
-        //////////////// BAD! Assumes you mean the 1st male sibling
+        // assumes you mean the 1st male sibling
         if(individual.getSiblingArr() != null)
         {
           for(int i = 0 ; i < individual.getSiblingArr().size() ; i++)
@@ -297,7 +298,7 @@ public class World
       }
       else if(rel.equals("sister"))
       {
-        //////////////// BAD! Assumes you mean the 1st male sibling
+        // assumes you mean the 1st male sibling
         if(individual.getSiblingArr() != null)
         {
           for(int i = 0 ; i < individual.getSiblingArr().size() ; i++)
@@ -311,7 +312,7 @@ public class World
       }
       else if(rel.equals("sibling"))
       {
-        //////////////// BAD! Assumes you mean last one in list
+        // assumes you mean last one in list
         if(individual.getSiblingArr() != null && individual.getSiblingArr().size() > 0)
         {
           result = individual.getSiblingArr().get(  individual.getSiblingArr().size() -1  ).getReference() ;
@@ -535,7 +536,7 @@ public class World
         }
         else if(meaning.equals("[individual1].individual = [individual2]"))
         {
-          result = "I'm not sure" ;///////////////////////////////////////////////////////// incomplete
+          result = "I'm not sure" ;
         }
         else if(meaning.equals("[user].name = [name]"))
         {

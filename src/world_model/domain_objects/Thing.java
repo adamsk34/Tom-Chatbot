@@ -1,4 +1,4 @@
-package world_model;
+package world_model.domain_objects;
 
 import java.util.* ;
 import mind.*;
@@ -31,7 +31,7 @@ public class Thing
     for(int i = 0 ; i < nameArr.size() && !result ; i++)
     {
       if(sameUntil(nameArr.get(i).getStr(), name) &&
-         nameArr.get(i).getConfidence() >= ChatBot.MATCH_MINIMUM_STATEMENT)
+         nameArr.get(i).getConfidence() >= Chatbot.MATCH_MINIMUM_STATEMENT)
       {
         result = true ;
       }
@@ -48,7 +48,7 @@ public class Thing
     for(int i = 0 ; i < nameArr.size() && result == null ; i++)
     {
       if(sameUntil(nameArr.get(i).getStr(), name) &&
-         nameArr.get(i).getConfidence() >= ChatBot.MATCH_MINIMUM_STATEMENT)
+         nameArr.get(i).getConfidence() >= Chatbot.MATCH_MINIMUM_STATEMENT)
       {
         result = nameArr.get(i).getStr() ;
       }
@@ -64,7 +64,7 @@ public class Thing
     if(name1 != null && name2 != null && name2.length() >= name1.length())
     {
       // make sure name1 isn't just a part of a word in name2
-      if(name1.length() == name2.length() || !ChatBot.isLetter(name2.charAt( name1.length() )) )
+      if(name1.length() == name2.length() || !Chatbot.isLetter(name2.charAt( name1.length() )) )
       {
         for(int i = 0 ; i < name1.length() && result ; i++)
         {

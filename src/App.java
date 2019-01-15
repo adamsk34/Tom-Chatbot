@@ -2,20 +2,20 @@ import java.util.* ;
 import java.io.* ;
 import mind.*;
 
-public class AI_Tom
+public class App
 {
   public static void main (String[] args) throws IOException
   {
     Scanner scanner = new Scanner(System.in) ;
-    ChatBot tom = new ChatBot() ;
-    String line = "" ;// the line the user enters
+    Chatbot tom = new Chatbot() ;
+    String userInput = "" ;// the line the user enters
     String response ;// the response Tom gives back
     
-    while(!tom.isQuitLine(line))
+    while(!tom.isQuitLine(userInput))
     {
-      line = scanner.nextLine() ;
+      userInput = scanner.nextLine() ;
       
-      response = tom.sendToTom(line) ;
+      response = tom.sendToTom(userInput) ;
 
       if(response != null)
         System.out.println(response) ;

@@ -1,19 +1,25 @@
-package world_model;
+package world_model.domain_objects;
 
 import java.util.* ;
 import mind.*;
 
 public class Individual extends Thing
 {
+  public static final int DEF_SCHOOL_CONF = 70 ;
+  public static final int DEF_ISMALE_CONF = 50 ;
+  public static final int DEF_ISFAMOUS_CONF = 70 ;
+  public static final int DEF_ISALIVE_CONF = 90 ;
+  public static final int DEF_ISPERSON_CONF = 99 ;
+  
   private int reference ;
   
   private MyString placeOfBirth ;
   private MyString nationality ;
   private MyString job ;
   private MyString employer ;
-  private MyString school = new MyString(null, 70) ;// magic number
+  private MyString school = new MyString(null, DEF_SCHOOL_CONF) ;
   private MyInt age = new MyInt(18, 1) ;
-  private MyBoolean isMale = new MyBoolean(false, 50) ;// magic number
+  private MyBoolean isMale = new MyBoolean(false, DEF_ISMALE_CONF) ;
   private Individual parent1 ;
   private Individual parent2 ;
   private Individual spouse ;
@@ -26,14 +32,13 @@ public class Individual extends Thing
   private ArrayList<Individual> likesIndividualsArr ;
   private ArrayList<Activity> likesActivitiesArr ;
   private ArrayList<Activity> doingArr ;
-  //private ArrayList<Individual> likesThingsArr ;???????????????
-  private MyBoolean isFamous = new MyBoolean(false, 70) ;// magic number
-  private MyBoolean isAlive = new MyBoolean(true, 90) ;// magic number
-  private MyBoolean isPerson = new MyBoolean(true, 99) ;
+  private MyBoolean isFamous = new MyBoolean(false, DEF_ISFAMOUS_CONF) ;
+  private MyBoolean isAlive = new MyBoolean(true, DEF_ISALIVE_CONF) ;
+  private MyBoolean isPerson = new MyBoolean(true, DEF_ISPERSON_CONF) ;
   
-  private ChatBot tom ;
+  private Chatbot tom ;
   
-  public Individual (ChatBot tomGiven)
+  public Individual (Chatbot tomGiven)
   {
     tom = tomGiven ;
     
@@ -43,7 +48,7 @@ public class Individual extends Thing
     
     likesIndividualsArr.add(this) ;
   }
-  public Individual (ChatBot tomGiven, String name, int confidence)
+  public Individual (Chatbot tomGiven, String name, int confidence)
   {
     tom = tomGiven ;
     
@@ -62,7 +67,6 @@ public class Individual extends Thing
   
   public void initializeArrs ()
   {
-    //nameArr = new ArrayList<MyString>() ;
     childArr = new ArrayList<Individual>() ;
     siblingArr = new ArrayList<Individual>() ;
     friendArr = new ArrayList<Individual>() ;
@@ -231,14 +235,6 @@ public class Individual extends Thing
   {
     boolean result = false ;
     
-    /*
-     childArr ;
-     siblingArr ;
-     friendArr ;
-     coworkerArr ;
-     dateArr ;
-    */
-    
     if(rel.equals("child")  ||  (rel.equals("son") && ind.isMale())  ||  (rel.equals("daughter") && ind.isFemale()))
     {
       if(searchArrayListIndividual(  childArr, ind  ))
@@ -382,7 +378,6 @@ public class Individual extends Thing
     return isPerson ;
   }
   
-  
   public void setPlaceOfBirth (MyString given)
   {
     placeOfBirth = given ;
@@ -426,23 +421,7 @@ public class Individual extends Thing
   public void setMyMood (MyInt given)
   {
     myMood = given ;
-  }/*
-  public void setIsBored (boolean given)
-  {
-    isBored = given ;
   }
-  public void setIsScared (boolean given)
-  {
-    isScared = given ;
-  }
-  public void setIsAngry (boolean given)
-  {
-    isAngry = given ;
-  }
-  public void setIsSad (boolean given)
-  {
-    isSad = given ;
-  }*/
   public void setFriendArr (ArrayList<Individual> given)
   {
     friendArr = given ;
@@ -488,14 +467,13 @@ public class Individual extends Thing
     isPerson = given ;
   }
   
-  
   public boolean isMale ()
   {
-    return(isMale.getBool() && isMale.getConfidence() > ChatBot.MATCH_MINIMUM_STATEMENT) ;
+    return(isMale.getBool() && isMale.getConfidence() > Chatbot.MATCH_MINIMUM_STATEMENT) ;
   }
   public boolean isFemale ()
   {
-    return(!isMale.getBool() && isMale.getConfidence() > ChatBot.MATCH_MINIMUM_STATEMENT) ;
+    return(!isMale.getBool() && isMale.getConfidence() > Chatbot.MATCH_MINIMUM_STATEMENT) ;
   }
   
   public String toString ()
