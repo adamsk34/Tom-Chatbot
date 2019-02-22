@@ -20,7 +20,7 @@ public class App
       if(response != null)
         System.out.println(response) ;
       else
-        System.out.println("ERROR: AI_Tom.main(), Tom responded with null") ;
+        System.out.println("ERROR: App.main(), Tom responded with null") ;
     }
     
     tom.printStats() ;

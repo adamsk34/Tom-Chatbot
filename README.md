@@ -4,7 +4,15 @@ This is a personal project, a rule-based chatbot. Made mostly in 2017. Unlike ma
 
 ## Getting Started
 
-The file [src/App.java](src/App.java) contains the `main()` method, run this to have a chat.
+Compile by going to the `/src/` directory and run the command:
+```
+javac App.java
+```
+
+Run the applications with the following command:
+```
+java App
+```
 
 ### Dependencies
 

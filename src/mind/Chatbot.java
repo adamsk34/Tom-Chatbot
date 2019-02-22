@@ -15,21 +15,21 @@ public class Chatbot
   private static ArrayList<Interchange> arrQM ; // question meaning
   private static ArrayList<Interchange> arrSM ; // statement meaning
   private static ArrayList<Interchange> arrMyQ ; // my questions
-  private static String fileNameQM = "\\..\\res\\phrases\\QMs.txt" ;
-  private static String fileNameSM = "\\..\\res\\phrases\\SMs.txt" ;
-  private static String fileNameMyQ = "\\..\\res\\phrases\\myQs.txt" ;
+  private static String fileNameQM = "/../res/phrases/QMs.txt" ;
+  private static String fileNameSM = "/../res/phrases/SMs.txt" ;
+  private static String fileNameMyQ = "/../res/phrases/myQs.txt" ;
   
-  private String fileNameJobs = "\\..\\res\\world_model\\Jobs.txt" ;
-  private String fileNameEmployers = "\\..\\res\\world_model\\Employers.txt" ;
-  private String fileNameSchools = "\\..\\res\\world_model\\Schools.txt" ;
-  private String fileNameBadMoods = "\\..\\res\\world_model\\MoodsBad.txt" ;
-  private String fileNameGoodMoods = "\\..\\res\\world_model\\MoodsGood.txt" ;
-  private String fileNameBoys = "\\..\\res\\world_model\\NamesBoy.txt" ;
-  private String fileNameGirls = "\\..\\res\\world_model\\NamesGirl.txt" ;
-  private String fileNameUnisex = "\\..\\res\\world_model\\NamesUnisex.txt" ;
-  private String fileNamePlaces = "\\..\\res\\world_model\\Places.txt" ;
-  private String fileNameRels = "\\..\\res\\world_model\\Rels.txt" ;
-  private String fileNameActivities = "\\..\\res\\world_model\\Activities.txt" ;
+  private String fileNameJobs = "/../res/world_model/Jobs.txt" ;
+  private String fileNameEmployers = "/../res/world_model/Employers.txt" ;
+  private String fileNameSchools = "/../res/world_model/Schools.txt" ;
+  private String fileNameBadMoods = "/../res/world_model/MoodsBad.txt" ;
+  private String fileNameGoodMoods = "/../res/world_model/MoodsGood.txt" ;
+  private String fileNameBoys = "/../res/world_model/NamesBoy.txt" ;
+  private String fileNameGirls = "/../res/world_model/NamesGirl.txt" ;
+  private String fileNameUnisex = "/../res/world_model/NamesUnisex.txt" ;
+  private String fileNamePlaces = "/../res/world_model/Places.txt" ;
+  private String fileNameRels = "/../res/world_model/Rels.txt" ;
+  private String fileNameActivities = "/../res/world_model/Activities.txt" ;
   
   private ArrayList<String> jobsArr      = new ArrayList<String>() ;
   private ArrayList<String> employersArr = new ArrayList<String>() ;
@@ -37,7 +37,7 @@ public class Chatbot
   private ArrayList<String> badMoodsArr  = new ArrayList<String>() ;
   private ArrayList<String> goodMoodsArr = new ArrayList<String>() ;
   private ArrayList<String> boysArr      = new ArrayList<String>() ;
-  private ArrayList<String> girlsArr     = new ArrayList<String>() ;// }<<< maybe these should be in World.java?
+  private ArrayList<String> girlsArr     = new ArrayList<String>() ;
   private ArrayList<String> unisexArr    = new ArrayList<String>() ;
   private ArrayList<String> placesArr    = new ArrayList<String>() ;
   private ArrayList<String> relsArr      = new ArrayList<String>() ;
