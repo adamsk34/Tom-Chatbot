@@ -9,7 +9,7 @@ Compile by going to the `/src/` directory and run the command:
 javac App.java
 ```
 
-Run the applications with the following command:
+Run the application with the following command:
 ```
 java App
 ```
